@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Merriweather:ital,wght@1,900&family=Noto+Serif:ital,wght@1,700&family=PT+Sans:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Diseño login</title>
+    <!-- <img src="assets/img/logo.png" alt="logo"> -->
+</head>
+
+<body>
+
+    <section class="inicio-sesion">
+        <section class="contenedor-principal">
+            <div class="contenedor-tarjeta">
+                <article class="tarjeta">
+                    <div class="nombre-banco">
+                        <h1>WELT BANC</h1>
+                    </div>
+                    <div class="imagen">
+                        <img src="assets/img/tarjeta-de-credito.png" alt="chip">
+                    </div>
+                    <div class="numero-tarjeta">
+                        <p id="numero-cuenta">12345678901</p>
+                    </div>
+                    <div class="nombre-cliente">
+                        <h2 id="nombre-usuario">Nombre de usuario</h2>
+                        <h3>Gold Card</h3>
+                    </div>
+                </article>
+            </div>
+            <div class="contenedor-formulario">
+                <form action="#">
+                    <h1>Inicio De Sesion</h1>
+                    <input type="text" placeholder="Numero De Cuenta" id="cuenta">
+                    <input type="text" placeholder="Usuario" id="input-usuario">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <button type="button" class="boton-entrar">Entrar</button>
+                    <a href="#" id="cambiar">Quiero Crear Una Cuenta </a>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <section class="registro-cuenta" style="display: none;">
+        <section class="contenedor-principal">
+            <div class="contenedor-formulario">
+                <form action="#">
+                    <h1>Registrar Cuenta</h1>
+                    <input type="text" placeholder="Numero De Cuenta" id="cuenta-nueva">
+                    <input type="text" placeholder="Nombres" id="input-usuario-nuevo">
+                    <input type="email" name="email" id="email" placeholder="Correo Electronico">
+                    <input type="password" name="password" id="password-nuevo" placeholder="Contraseña">
+                    <input type="text" placeholder="Saldo Inicial">
+                    <button type="button" class="boton-entrar">Registrar</button>
+                    <a href="#" id="cambiar-2">Ya tengo una cuenta</a>
+                </form>
+            </div>
+            <div class="contenedor-tarjeta">
+                <article class="tarjeta-2">
+                    <div class="nombre-banco">
+                        <h1>WELT BANC</h1>
+                    </div>
+                    <div class="imagen">
+                        <img src="assets/img/tarjeta-de-credito.png" alt="chip">
+                    </div>
+                    <div class="numero-tarjeta">
+                        <p id="numero-cuenta-nueva">12345678901</p>
+                    </div>
+                    <div class="nombre-cliente">
+                        <h2 id="nombre-usuario-nuevo">Nombre de usuario</h2>
+                        <h3>Gold Card</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
